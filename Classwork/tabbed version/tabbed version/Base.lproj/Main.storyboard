@@ -74,6 +74,7 @@
                         <viewControllerLayoutGuide type="bottom" id="AbH-qM-pco"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BB5-4e-FsB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIP-Y9-5hi">
@@ -116,6 +117,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zkf-bn-PFH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GOd-1j-GaI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-46-mxW">

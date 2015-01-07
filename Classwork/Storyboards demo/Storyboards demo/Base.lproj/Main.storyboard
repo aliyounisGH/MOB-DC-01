@@ -67,6 +67,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pdQ-Tr-HKJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fxU-GN-eKf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-SU-Hmn">
@@ -112,6 +113,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5xC-Ey-xVa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9bz-Aq-jGP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bb-Ah-d93">
@@ -175,6 +177,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mj8-ws-hpI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1PA-eW-IVD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookmark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cp8-9R-9KV">
@@ -238,6 +241,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TqC-Gc-Jqb"/>
+        <segue reference="JZU-K8-wKH"/>
     </inferredMetricsTieBreakers>
 </document>
