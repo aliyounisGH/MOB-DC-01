@@ -52,6 +52,7 @@
 		94636B9C1A54D93000BEEFF6 /* entertainmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entertainmentTests.swift; sourceTree = "<group>"; };
 		94636BA71A54DD7F00BEEFF6 /* entertainment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entertainment.png; sourceTree = "<group>"; };
 		94636BA91A54DE7400BEEFF6 /* entertainment.com_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entertainment.com_logo.png; sourceTree = "<group>"; };
+		9473C9971A5DF72D00AE2EB4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		948636981A5788B300F36D78 /* sample-307-atom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-307-atom.png"; sourceTree = "<group>"; };
 		948636991A5788B300F36D78 /* sample-935-power-socket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-935-power-socket@2x.png"; sourceTree = "<group>"; };
 		9486369A1A5788B300F36D78 /* sample-1004-voicemail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-1004-voicemail@2x.png"; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 				94636B8D1A54D93000BEEFF6 /* Images.xcassets */,
 				94636B8F1A54D93000BEEFF6 /* LaunchScreen.xib */,
 				94636B841A54D93000BEEFF6 /* Supporting Files */,
+				9473C9971A5DF72D00AE2EB4 /* MyPlayground.playground */,
 			);
 			path = entertainment;
 			sourceTree = "<group>";
