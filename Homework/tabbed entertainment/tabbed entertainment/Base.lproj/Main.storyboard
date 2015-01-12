@@ -103,9 +103,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entertainment.com_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="juc-ed-ySN">
-                                <rect key="frame" x="55" y="133" width="271" height="87"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHP-DB-wui">
                                 <rect key="frame" x="167" y="427" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,24 +110,20 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="entertainment.com_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="juc-ed-ySN">
+                                <rect key="frame" x="55" y="133" width="271" height="87"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="cover" destination="juc-ed-ySN" id="oaf-nR-pWd"/>
-                        <outlet property="logo" destination="juc-ed-ySN" id="g1w-6A-W98"/>
-                        <outlet property="view" destination="juc-ed-ySN" id="kL9-jl-jPX"/>
+                        <outlet property="logo" destination="juc-ed-ySN" id="fd5-zx-Rhp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJb-TB-f81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-376.5333333333333" y="0.0"/>
+            <point key="canvasLocation" x="-463" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

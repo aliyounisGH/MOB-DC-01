@@ -3,11 +3,12 @@
 import Foundation
 
 // TODO: Create two variables, name and age. Name is a string, age is an integer.
-var name = "Tedi"
+var name:String = "Tedi"
 var age = 21
 
 // TODO: Print "Hello {whatever the value of name is}, you are {whatever the value of age is} years old!"
 println("Hello \(name), you are \(age)")
+//"This is " + "interpolation." + name
 
 // TODO: Print “You can drink” below the above text if the user is above 21. If they are above 18, print “you can vote”. If they are above 16, print “You can drive”
 if age >= 21 {
@@ -16,11 +17,27 @@ if age >= 21 {
     println("You can vote.")
 } else if age >= 16 {
     println("You can drive")
+} else {
+    println("Grow up!")
 }
 
 // TODO: Print “you can drive” if the user is above 16 but below 18. It should print “You can drive and vote” if the user is above 18 but below 21. If the user is above 21, it should print “you can drive, vote and drink (but not at the same time!”.
 
+if age > 16 && age < 18 {
+    println("You can drive but you can't vote")
+}else if age > 18 || age > 21 {
+    println("You can vote")
+}
+
+
 // TODO: Print the first fifty multiples of seven minus one (e.g. the first three multiples are 7, 14, 21. The first three multiples minus one are 6, 13, 20)
+
+for i in 1...50 {
+    var multiple = 7 * i-1
+    println(multiple)
+}
+
+
 for var i = 1; i < 50; ++i {
     var answer = (7 * i) - 1
     println(answer)
@@ -47,6 +64,20 @@ for number in 0..<(countTo) {
 println("result is \(result)")
 
 
+var fibNum = 9, current = 0, next = 1, finalResult = 0
+for index in 0..<fibNum {
+    //current val is 3
+    //temp value becomes 3
+    let tempVar = current
+    //current value becomes next(5)
+    current = next
+    //next value becomes old current(temporary) + new current(old next)
+    next = tempVar + current
+    finalResult = tempVar
+}
+println("Fib num is \(finalResult)")
+
+
 // TODO: Print out "Hello {whatever the value of name is}, your name is {however long the string name is} characters long!. Use countElements()
 println("Hello \(name), your name is \(countElements(name)) characters long!")
 
@@ -58,6 +89,13 @@ for var i = 1; i < 100; ++i {
     numVal += String(rand()).toInt()!
 }
 println("Sum of random numbers is \(numVal)")
+
+//another one
+var sum = 0
+for i in 1...100 {
+    sum += Int(rand())
+}
+println(sum)
 
 // Bonus TO DO: Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 for index in 1...100 {

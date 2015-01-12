@@ -11,10 +11,14 @@ import UIKit
 class SecondViewController: UIViewController {
 
 
+    @IBOutlet weak var logo: UIImageView!
  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        logo.transform = CGAffineTransformMakeRotation(-0.5)
+        
         // Do any additional setup after loading the view, typically from a nib.
 
             }
