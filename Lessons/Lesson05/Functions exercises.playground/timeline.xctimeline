@@ -3,10 +3,14 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
+<<<<<<< HEAD
          documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=3120&amp;EndingColumnNumber=19&amp;EndingLineNumber=42&amp;StartingColumnNumber=5&amp;StartingLineNumber=42&amp;Timestamp=442377337.596565">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
          documentLocation = "#CharacterRangeLen=36&amp;CharacterRangeLoc=611&amp;EndingColumnNumber=45&amp;EndingLineNumber=21&amp;StartingColumnNumber=9&amp;StartingLineNumber=21&amp;Timestamp=442376423.858458">
+=======
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=2423&amp;EndingColumnNumber=19&amp;EndingLineNumber=14&amp;StartingColumnNumber=5&amp;StartingLineNumber=14&amp;Timestamp=442671486.944226">
+>>>>>>> 9edd62044a09597fc8aae0968ccf85e221002d76
       </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
