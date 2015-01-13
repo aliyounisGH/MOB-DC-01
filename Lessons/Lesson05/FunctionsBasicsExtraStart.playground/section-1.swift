@@ -61,6 +61,9 @@ Final note: don't be afraid to have long function names, they'll help you in big
 
 // Create a function knockknock that just prints the line "Who's there?"
 // This function has no parameters nor a return value
+func knockknock() {
+    println("Who's there")
+}
 
 
 // That was fun! Let's joke around and knock a few times more

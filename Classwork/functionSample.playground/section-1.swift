@@ -50,6 +50,7 @@ func save(name: String) -> (first: String, last: String) {
     return (name, lastName)
 }
 
+save("Tedi").1
 var myName = save("Tedi")
 myName.first
 myName.last
