@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C2DDACB1A5DC0F700AE2FAB"
-               BuildableName = "Interface Builder and Functions.app"
-               BlueprintName = "Interface Builder and Functions"
-               ReferencedContainer = "container:Interface Builder and Functions.xcodeproj">
+               BlueprintIdentifier = "7C7F14561A5B633800E4CD97"
+               BuildableName = "Class 4.app"
+               BlueprintName = "Class 4"
+               ReferencedContainer = "container:Class 4.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C2DDAE31A5DC0F700AE2FAB"
-               BuildableName = "Interface Builder and FunctionsTests.xctest"
-               BlueprintName = "Interface Builder and FunctionsTests"
-               ReferencedContainer = "container:Interface Builder and Functions.xcodeproj">
+               BlueprintIdentifier = "7C7F146E1A5B633800E4CD97"
+               BuildableName = "Class 4Tests.xctest"
+               BlueprintName = "Class 4Tests"
+               ReferencedContainer = "container:Class 4.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C2DDAE31A5DC0F700AE2FAB"
-               BuildableName = "Interface Builder and FunctionsTests.xctest"
-               BlueprintName = "Interface Builder and FunctionsTests"
-               ReferencedContainer = "container:Interface Builder and Functions.xcodeproj">
+               BlueprintIdentifier = "7C7F146E1A5B633800E4CD97"
+               BuildableName = "Class 4Tests.xctest"
+               BlueprintName = "Class 4Tests"
+               ReferencedContainer = "container:Class 4.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C2DDACB1A5DC0F700AE2FAB"
-            BuildableName = "Interface Builder and Functions.app"
-            BlueprintName = "Interface Builder and Functions"
-            ReferencedContainer = "container:Interface Builder and Functions.xcodeproj">
+            BlueprintIdentifier = "7C7F14561A5B633800E4CD97"
+            BuildableName = "Class 4.app"
+            BlueprintName = "Class 4"
+            ReferencedContainer = "container:Class 4.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C2DDACB1A5DC0F700AE2FAB"
-            BuildableName = "Interface Builder and Functions.app"
-            BlueprintName = "Interface Builder and Functions"
-            ReferencedContainer = "container:Interface Builder and Functions.xcodeproj">
+            BlueprintIdentifier = "7C7F14561A5B633800E4CD97"
+            BuildableName = "Class 4.app"
+            BlueprintName = "Class 4"
+            ReferencedContainer = "container:Class 4.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C2DDACB1A5DC0F700AE2FAB"
-            BuildableName = "Interface Builder and Functions.app"
-            BlueprintName = "Interface Builder and Functions"
-            ReferencedContainer = "container:Interface Builder and Functions.xcodeproj">
+            BlueprintIdentifier = "7C7F14561A5B633800E4CD97"
+            BuildableName = "Class 4.app"
+            BlueprintName = "Class 4"
+            ReferencedContainer = "container:Class 4.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

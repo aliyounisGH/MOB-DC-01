@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Interface Builder and Functions.xcscheme</key>
+		<key>Class 4.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7C2DDACB1A5DC0F700AE2FAB</key>
+		<key>7C7F14561A5B633800E4CD97</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C2DDAE31A5DC0F700AE2FAB</key>
+		<key>7C7F146E1A5B633800E4CD97</key>
 		<dict>
 			<key>primary</key>
 			<true/>
