@@ -411,6 +411,7 @@
 				7C7F147B1A5B633800E4CD97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C7F147C1A5B633800E4CD97 /* Build configuration list for PBXNativeTarget "Class 4Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				7C7F147E1A5B633800E4CD97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

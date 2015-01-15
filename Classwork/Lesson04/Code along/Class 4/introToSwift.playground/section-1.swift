@@ -59,7 +59,7 @@ let myName = "Tedi"
 //myName = "John" Will error out because constants are immutable
 
 let amIHere: String? = "hello"
-println(amIHere)
+println(amIHere!)
 
 /****************** Control Flow ******************/
 

@@ -4,40 +4,35 @@ import Foundation
 
 // TODO: Create two variables, name and age. Name is a string, age is an integer.
 var name:String = "Tedi"
-var age = 21
+var age = 18
 
 // TODO: Print "Hello {whatever the value of name is}, you are {whatever the value of age is} years old!"
-<<<<<<< HEAD
-println("Hello \(name), you are \(age)")
-//"This is " + "interpolation." + name
-=======
+
 println("Hello \(name), you are \(age) years old")
 //"This is " + "interpolation." + name
 
->>>>>>> 9edd62044a09597fc8aae0968ccf85e221002d76
+
 
 // TODO: Print “You can drink” below the above text if the user is above 21. If they are above 18, print “you can vote”. If they are above 16, print “You can drive”
 if age >= 21 {
     println("You can drink!")
-}else if age >= 18{
+} else if age >= 18{
     println("You can vote.")
-<<<<<<< HEAD
+
 } else if age >= 16 {
     println("You can drive")
-} else {
-=======
-}else if age >= 16 {
+} else if age >= 16 {
     println("You can't drive")
-}else {
->>>>>>> 9edd62044a09597fc8aae0968ccf85e221002d76
+} else {
+
     println("Grow up!")
 }
 
 
 // TODO: Print “you can drive” if the user is above 16 but below 18. It should print “You can drive and vote” if the user is above 18 but below 21. If the user is above 21, it should print “you can drive, vote and drink (but not at the same time!”.
-if age > 16 && age < 18 {
+if age > 16 && age <= 18 {
     println("You can drive but you can't vote")
-}else if age > 18 || age > 21 {
+} else if age > 18 || age > 21 {
     println("You can vote")
 }
 
@@ -49,27 +44,27 @@ if age > 16 && age < 18 {
 
 
 // TODO: Print the first fifty multiples of seven minus one (e.g. the first three multiples are 7, 14, 21. The first three multiples minus one are 6, 13, 20)
-<<<<<<< HEAD
+
 
 for i in 1...50 {
-    var multiple = 7 * i-1
+    var multiple = (7*i)-1
     println(multiple)
 }
 
 
-=======
+
 for i in 1...50 {
     var multiple = 7 * i - 1
     println(multiple)
 }
 
->>>>>>> 9edd62044a09597fc8aae0968ccf85e221002d76
+
 for var i = 1; i < 50; ++i {
     println(7*i-1)
 }
 
 // TODO: Create a constant called number
-let number = 0
+let number = 8
 
 // TODO: Print whether the above number is even
 if number % 2 == 0 && number != 0 {
@@ -90,17 +85,18 @@ for index in 0..<fibNum {
 }
 println("Fib num is \(result)")
 
+//............................................................
 
-var fibNum = 9, current = 0, next = 1, finalResult = 0
-for index in 0..<fibNum {
+var fibNum1 = 9, current1 = 0, next1 = 1, finalResult = 0
+for index in 0..<fibNum1 {
     //current val is 3
     //temp value becomes 3
-    let tempVar = current
+    let tempVar1 = current1
     //current value becomes next(5)
-    current = next
+    current1 = next1
     //next value becomes old current(temporary) + new current(old next)
-    next = tempVar + current
-    finalResult = tempVar
+    next1 = tempVar1 + current1
+    finalResult = tempVar1
 }
 println("Fib num is \(finalResult)")
 
@@ -117,9 +113,9 @@ for i in 1...100 {
 println(sum)
 
 //another one
-var sum = 0
+var sum1 = 0
 for i in 1...100 {
-    sum += Int(rand())
+    sum1 += Int(rand())
 }
 println(sum)
 

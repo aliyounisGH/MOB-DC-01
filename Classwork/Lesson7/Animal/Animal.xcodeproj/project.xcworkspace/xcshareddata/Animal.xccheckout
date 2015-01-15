@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>89BD2897-9D48-4AB6-BBFF-1A3151BE0E50</string>
+	<string>23680A18-0CEC-43C3-8995-AD83898F9F49</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Class 4</string>
+	<string>Animal</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
 		<string>https://github.com/aliyounisGH/MOB-DC-01.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Classwork/Lesson04/Code along/Class 4.xcodeproj</string>
+	<string>Classwork/Lesson7/Animal/Animal.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
