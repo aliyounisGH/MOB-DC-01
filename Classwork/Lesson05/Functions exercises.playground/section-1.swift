@@ -59,7 +59,6 @@ fib(8)
 
 // TODO: Write a function that calls the above function in order to print the sum of the first 20 fibonacci numbers.
 
-for summing in fib(0)...fib(19)
 
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
 
