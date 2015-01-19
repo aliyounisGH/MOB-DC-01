@@ -4,15 +4,14 @@
 // Complete these, in order, writing code under each TODO statement. Each statement calls for a function to be written, write each of them and then immediately call it after the function definition.
 
 // TODO: Write a function that prints out "Hello world!" 10 times
-
-func writeSentence(x: Int) {
-    
-for hello in 1...x {
-    println("Hello world")
+func world(num:Int) {
+    for index in 1...num {
+    println("hello world")
     }
 }
 
-writeSentence(10)
+world(3)
+
 
 
 // TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
