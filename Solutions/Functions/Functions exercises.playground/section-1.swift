@@ -25,11 +25,13 @@ func sayHello(name:String) {
 // TODO: Write a function accepts a string optional. If the string optional exists, print "Hello {value of string}!". If it doesn't, print "Hello world!"
 func sayHelloOptional(name:String?) {
     if let actualName = name {
-        println("Hello \(name)")
+        println("Hello \(name!)")
     } else {
         println("Hello world")
     }
 }
+
+//sayHelloOptional()
 
 // TODO: Write a function that takes one parameter, n, and returns an integer, the nth series in the fibonacci
 // sequence. The first fibonacci number is 0, the second is 1, the third is 1, the fourth is 2, fifth is 3, sixth is 5, etc. fibonacci numbers at sequence n are the sum of the n-1 and n-2 fibonacci number.
@@ -143,6 +145,8 @@ func reverseString(word:String) -> String {
     return reverseStr
 }
 
+reverseString("ali")
+
 
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
 func findStringInArray(arrStrings:[String], searchString:String) -> Bool {
@@ -156,6 +160,8 @@ func findStringInArray(arrStrings:[String], searchString:String) -> Bool {
     
     return found
 }
+
+findStringInArray(["ali", "wisal", "hadi"], "hadi")
 
 // BONUS TODO: Write a function that accepts a string and returns a boolean indicating whether a string is a palindrome (reads the same backwards or forwards).
 func isPalindrom(word:String) -> Bool {
