@@ -13,6 +13,15 @@ import UIKit
 
 // Change calculator: write a function that takes a dollar amount and returns the amount of pennies, nickles, dimes, and quarters needed to return as change (if under $1)
 
+func dollarChanger(inout amount:Double) ->(Q:Double, D:Double?, N:Double?, P:Double?) {
+    var Q = 0.00
+    if amount % 0.25 == 0.00 {
+        let Quarters = amount / 0.25
+    }
+    else if amount%0.25 != 0.00 && amount%0.10 == 0.00
+    
+}
+
 // Variadic paremeters are an endless list of paremeters that can be passed inside a function. The data inside the function itself is greated as an array. Write a function that takes a paremeter describing whether to  multiply or add, and a variadic paremeter that represents all the numbers. Return either the sum or the multiplicaiton of the integerss.
 // Variadic paremeters example: addNumbers(numbers: Int...)
 
