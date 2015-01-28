@@ -92,15 +92,21 @@ addFibsUpToThisIndex(7)
 // TODO: Write a function that prints out each of the first 20 fibonacci numbers and whether they are prime. (e.g. 0 is not prime or composite, 1 is prime, etc)
 
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
-func billTip (billAmount:Float, tipPercent:Float) -> (Float, Float) {
-    let tipAmount = billAmount * tipPercent
-    let totalBillAmount = billAmount + (billAmount * tipPercent)
+func billTip (billAmount:Double, tipPercent:Double?) -> (Double, Double) {
+    var tipAmount = 0.0,
+        totalBillAmount = billAmount
+    
+    if let actualTip = tipPercent {
+        tipAmount = totalBillAmount * actualTip
+        totalBillAmount += tipAmount
+    }
+    
     let billDetails = (totalBillAmount, tipAmount)
     
     return billDetails
 }
 
-billTip(10.0, 0.3)
+billTip(10.0, nil)
 
 
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
@@ -127,37 +133,36 @@ reverseStringAndAttach(word: "hello")
 
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
 
-//func searchString(#inputArray:[String], #searchTerm:String) ->Bool {
-//    var isThere = true
-//    for var counter = 0; counter < inputArray.count; counter++ {
-//        if(inputArray[counter] == searchTerm) {
-//            isThere = true
-//        }
-//        else {
-//            isThere = false
-//        }
-//    }
-//    
-//    return isThere
-//}
-//
-//searchString(inputArray: ["ali", "hadi", "wisal"], searchTerm: "ali")
+func searchString(#inputArray:[String], #searchTerm:String) ->Bool {
+    var isThere = false
+    for var counter = 0; counter < inputArray.count; counter++ {
+        println("\(inputArray[counter])")
+        if(inputArray[counter] == searchTerm) {
+            println("if")
+            isThere = true
+        }
+    }
+    
+    return isThere
+}
+
+searchString(inputArray: ["ali", "hadi", "wisal"], searchTerm: "ali")
 
 
 // BONUS TODO: Write a function that accepts a string and returns a boolean indicating whether a string is a palindrome (reads the same backwards or forwards).
 
 //func palindrome(word:String) ->Bool {
 
-    var word = "ali"
-    var max = countElements(word)
-    var i = 1
-for charIndex in i...max {
-    if charIndex[i] == charIndex[max] && i <= Int(max/2) {
-        ++charIndex
-    } else {
-        return false
-    }
-}
+//    var word = "ali"
+//    var max = countElements(word)
+//    var i = 1
+//for charIndex in i...max {
+//    if charIndex[i] == charIndex[max] && i <= Int(max/2) {
+//        ++charIndex
+//    } else {
+//        return false
+//    }
+//}
 
 //}
 
