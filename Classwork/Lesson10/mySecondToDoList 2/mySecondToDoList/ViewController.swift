@@ -16,7 +16,11 @@ class ViewController: UIViewController {
     
     var delegate: toDoProtocol?
     
-    var thisToDoListArray: [String] = []
+    var thisToDoListArray: [String] = [] {
+        didSet {
+            listItemsInTV()
+        }
+    }
     
     @IBOutlet weak var itemTextField: UITextField!
     
@@ -27,21 +31,22 @@ class ViewController: UIViewController {
         self.delegate?.addItemToDoListInTV(itemTextField.text)
         self.dismissViewControllerAnimated(true, completion: nil)
         
-        self.thisToDoListArray.append(itemTextField.text)
+        thisToDoListArray.append(itemTextField.text)
         
-        self.toDoListDisplayLabel.text = self.toDoListDisplayLabel.text! + "\n" + " # " + thisToDoListArray.last!
+        toDoListDisplayLabel.text = toDoListDisplayLabel.text! + "\n" + " # " + thisToDoListArray.last!
         
         println("\(thisToDoListArray) \n")
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    func listItemsInTV() {
+        var listString = ""
+        for item:String in self.thisToDoListArray {
+            listString += " # " + item + "\n"
+        }
+        
+        self.toDoListDisplayLabel.text = listString
+        println("fpp \(listString)")
+    }
     
 
     override func viewDidLoad() {

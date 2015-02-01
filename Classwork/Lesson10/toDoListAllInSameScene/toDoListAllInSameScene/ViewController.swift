@@ -8,27 +8,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var itemField: UITextField!
     
     @IBAction func addItem(sender: AnyObject) {
+        toDoItems.append(itemField.text)
         
     }
     
-    @IBOutlet weak var toDoList: UITableView!
+    @IBOutlet var toDoList: UITableView!
     
-    
-    
+    var toDoItems: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.toDoList.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section:Int) -> Int {
+        return self.toDoItems.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:UITableViewCell = self.toDoList.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        
+        cell.textLabel?.text = self.toDoItems[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        println("You selected cell #\(indexPath.row)!")
     }
 
 
