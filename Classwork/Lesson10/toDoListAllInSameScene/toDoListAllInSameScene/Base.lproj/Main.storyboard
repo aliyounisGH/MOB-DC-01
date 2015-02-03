@@ -47,6 +47,7 @@
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="eH7-yq-sIc"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="CIF-zB-Kcu"/>
                                 </connections>
                             </tableView>
                         </subviews>

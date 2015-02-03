@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var toDoListArray: [String] = []
+    var toDoListArray: [String] = ["Foo", "bar"]
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -22,18 +22,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
-        addItem(itemField.text)
-        let(toDo) = toDoListArray[indexPath.row]
+        let todo = self.toDoListArray[indexPath.row]
         
-        cell.textLabel?.text = toDo
+        cell.textLabel?.text = todo
         return cell
     }
     
     @IBOutlet weak var itemField: UITextField!
     
     @IBAction func addItem(sender: AnyObject) {
-        toDoListArray.append(itemField.text)
-        println(toDoListArray)
+        self.toDoListArray.append(itemField.text)
+        println(self.toDoListArray)
     }
     
     @IBOutlet var toDoList: UITableView!
