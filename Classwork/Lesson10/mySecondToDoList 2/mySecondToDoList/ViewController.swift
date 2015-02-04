@@ -12,7 +12,7 @@ protocol toDoProtocol {
     func addItemToDoListInTV (toDoItem:String)
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     var delegate: toDoProtocol?
     
@@ -26,6 +26,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var toDoListDisplayLabel: UILabel!
     
+    
+    @IBOutlet weak var errorMessage: UILabel!
+    
+    
+    
+    @IBOutlet weak var hiddenLabel: UILabel!
+    
+    
+    
     @IBAction func addItemToToDoList(sender: AnyObject) {
         
         self.delegate?.addItemToDoListInTV(itemTextField.text)
@@ -36,6 +45,13 @@ class ViewController: UIViewController {
         toDoListDisplayLabel.text = toDoListDisplayLabel.text! + "\n" + " # " + thisToDoListArray.last!
         
         println("\(thisToDoListArray) \n")
+    }
+    
+    
+    @IBAction func pressPostButton(sender: AnyObject) {
+        
+        //first step in setting notification
+        NSNotificationCenter.defaultCenter().postNotificationName("unhideHiddenLabels", object: nil)
     }
     
     func listItemsInTV() {
@@ -51,7 +67,48 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.itemTextField.delegate = self
+        self.errorMessage.hidden = true
+        
+        self.hiddenLabel.hidden = true
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "unhideCurrentLabels:",
+            name: "unhideHiddenLabels",
+            object: nil)
+        
+        // the "functionName:" is a string for the name of the function and colon means there will be input parameters
+        
+        //now to listen to a pre-defined system notification ..
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "textHasChanged:",
+            name: UITextFieldTextDidChangeNotification,
+            object: nil)
+        
+    }
+    
+    func textHasChanged(notifications: NSNotification) {
+        println("text has changed")
+    }
+    
+    func unhideCurrentLabels(notification: NSNotification) {
+        self.hiddenLabel.hidden = false
+        println("trigerred unhideHiddenLabels notification")
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if self.itemTextField.text.isEmpty {
+            println("Your text field is empty, enter something")
+            textField.resignFirstResponder()
+            self.errorMessage.hidden = false
+        }
+        else {
+            self.errorMessage.hidden = true
+        }
+    
+    return true
     }
 
     override func didReceiveMemoryWarning() {

@@ -54,6 +54,37 @@
                                     <rect key="frame" x="35" y="128" width="309" height="293"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your field is empty, add smthing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-v9-m9H">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="95" width="245" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hidden label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79E-sO-faC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="448" width="150" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-j7-VUr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Post notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="477" width="138" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pressPostButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gie-Oi-hnd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -61,6 +92,9 @@
                                 <exclude reference="fd1-WU-D2v"/>
                                 <exclude reference="Vg2-bY-z9P"/>
                                 <exclude reference="HLl-WW-1bi"/>
+                                <exclude reference="k9q-v9-m9H"/>
+                                <exclude reference="79E-sO-faC"/>
+                                <exclude reference="lQM-j7-VUr"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -68,10 +102,15 @@
                                 <include reference="fd1-WU-D2v"/>
                                 <include reference="Vg2-bY-z9P"/>
                                 <include reference="HLl-WW-1bi"/>
+                                <include reference="k9q-v9-m9H"/>
+                                <include reference="79E-sO-faC"/>
+                                <include reference="lQM-j7-VUr"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="errorMessage" destination="k9q-v9-m9H" id="8B8-VT-azD"/>
+                        <outlet property="hiddenLabel" destination="79E-sO-faC" id="Zg0-HJ-eXO"/>
                         <outlet property="itemTextField" destination="fd1-WU-D2v" id="6yG-lZ-aaq"/>
                         <outlet property="toDoListDisplayLabel" destination="HLl-WW-1bi" id="w7V-Sk-MgV"/>
                     </connections>

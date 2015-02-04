@@ -17,11 +17,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toDoListArray.count
+        return self.toDoListArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("todoCell", forIndexPath: indexPath) as UITableViewCell
         let todo = self.toDoListArray[indexPath.row]
         
         cell.textLabel?.text = todo
@@ -33,6 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func addItem(sender: AnyObject) {
         self.toDoListArray.append(itemField.text)
         println(self.toDoListArray)
+        self.toDoList.reloadData()
     }
     
     @IBOutlet var toDoList: UITableView!
@@ -43,10 +44,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
     }
-
-    
-
-
 
 }
 
