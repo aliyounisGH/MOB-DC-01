@@ -13,6 +13,7 @@
 		94562E051A82EF69008EE689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94562E041A82EF69008EE689 /* Images.xcassets */; };
 		94562E081A82EF69008EE689 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94562E061A82EF69008EE689 /* LaunchScreen.xib */; };
 		94562E141A82EF69008EE689 /* programmatic_viewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94562E131A82EF69008EE689 /* programmatic_viewsTests.swift */; };
+		94562E1E1A82FB25008EE689 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 94562E1D1A82FB25008EE689 /* music.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		94562E0D1A82EF69008EE689 /* programmatic viewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "programmatic viewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94562E121A82EF69008EE689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94562E131A82EF69008EE689 /* programmatic_viewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = programmatic_viewsTests.swift; sourceTree = "<group>"; };
+		94562E1D1A82FB25008EE689 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		94562DFA1A82EF69008EE689 /* programmatic views */ = {
 			isa = PBXGroup;
 			children = (
+				94562E1D1A82FB25008EE689 /* music.png */,
 				94562DFD1A82EF69008EE689 /* AppDelegate.swift */,
 				94562DFF1A82EF69008EE689 /* ViewController.swift */,
 				94562E011A82EF69008EE689 /* Main.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94562E031A82EF69008EE689 /* Main.storyboard in Resources */,
+				94562E1E1A82FB25008EE689 /* music.png in Resources */,
 				94562E081A82EF69008EE689 /* LaunchScreen.xib in Resources */,
 				94562E051A82EF69008EE689 /* Images.xcassets in Resources */,
 			);

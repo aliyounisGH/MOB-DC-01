@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rgJ-yc-h52">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="auto_layout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5m-HQ-0ie">
+                                <rect key="frame" x="36" y="40" width="111" height="95"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="2ff-Ir-R9R"/>
+                                    <constraint firstAttribute="height" constant="95" id="2u5-vD-Kgo"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="AfM-S1-U94"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="S92-Wn-WXO"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="111" id="UCV-E2-0l7"/>
+                                    <constraint firstAttribute="width" constant="111" id="eBl-K2-Vmr"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="111" id="jIR-MC-fq4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="jVY-wg-jdP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="95" id="qhW-Rn-KgP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="95" id="sx2-Ei-QJH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2ff-Ir-R9R"/>
+                                        <exclude reference="S92-Wn-WXO"/>
+                                        <exclude reference="jIR-MC-fq4"/>
+                                        <exclude reference="qhW-Rn-KgP"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUl-pK-hED">
+                                <rect key="frame" x="462" y="40" width="102" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="Ifx-WY-hzB"/>
+                                    <constraint firstAttribute="width" constant="102" id="rOb-Ck-fya"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDO-kJ-CC2">
+                                <rect key="frame" x="36" y="185" width="102" height="95"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="4pF-LD-GIo"/>
+                                    <constraint firstAttribute="width" constant="102" id="VHy-8A-y9K"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4pF-LD-GIo"/>
+                                        <exclude reference="VHy-8A-y9K"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onX-Iw-eya">
+                                <rect key="frame" x="156" y="508" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Increase Distance Bet Ghost And Pacman">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="increaseDistanceBetweenPacmanAndGhost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvU-Q9-Tdw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="onX-Iw-eya" secondAttribute="centerX" id="1y6-vz-Ocv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bUl-pK-hED" secondAttribute="trailing" constant="20" id="3ba-tw-Cl2"/>
+                            <constraint firstItem="WDO-kJ-CC2" firstAttribute="top" secondItem="o5m-HQ-0ie" secondAttribute="bottom" constant="50" id="6s2-58-ql1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="onX-Iw-eya" secondAttribute="bottom" constant="62" id="8dN-Yd-kKu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bUl-pK-hED" secondAttribute="trailing" constant="20" id="Alr-Ly-KVb"/>
+                            <constraint firstItem="WDO-kJ-CC2" firstAttribute="width" secondItem="bUl-pK-hED" secondAttribute="width" id="G00-vd-Bwm"/>
+                            <constraint firstItem="o5m-HQ-0ie" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="KMI-kK-z8u"/>
+                            <constraint firstItem="WDO-kJ-CC2" firstAttribute="height" secondItem="bUl-pK-hED" secondAttribute="height" id="PSR-EF-EV7"/>
+                            <constraint firstItem="WDO-kJ-CC2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="jVU-9s-VvZ"/>
+                            <constraint firstItem="o5m-HQ-0ie" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ls9-AS-M3D"/>
+                            <constraint firstItem="o5m-HQ-0ie" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="nh1-Dq-gsc"/>
+                            <constraint firstItem="o5m-HQ-0ie" firstAttribute="leading" secondItem="WDO-kJ-CC2" secondAttribute="leading" id="v7p-rO-KJ8"/>
+                            <constraint firstItem="bUl-pK-hED" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="yml-G2-k4X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ls9-AS-M3D"/>
+                                <exclude reference="nh1-Dq-gsc"/>
+                                <exclude reference="Alr-Ly-KVb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="verticalSpacingBetweenPurpleGhostAndPacman" destination="6s2-58-ql1" id="RQF-ko-MHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6NQ-Ur-ch1">
+            <objects>
+                <viewController id="rgJ-yc-h52" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z92-q5-1Q7"/>
+                        <viewControllerLayoutGuide type="bottom" id="bNu-gn-OVd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RXe-Sb-LwB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="usename" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewM-XQ-o3v">
+                                <rect key="frame" x="36" y="44" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vja-LP-ubP">
+                                <rect key="frame" x="36" y="124" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-i5-D3P">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-JP-LSy">
+                                <rect key="frame" x="343" y="550" width="221" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Accept Terms of Service">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vja-LP-ubP" firstAttribute="top" secondItem="ewM-XQ-o3v" secondAttribute="bottom" constant="50" id="24a-wM-bsQ"/>
+                            <constraint firstItem="uGy-JP-LSy" firstAttribute="leading" secondItem="tAE-i5-D3P" secondAttribute="trailing" constant="20" id="3uz-gv-0pk"/>
+                            <constraint firstItem="ewM-XQ-o3v" firstAttribute="leading" secondItem="RXe-Sb-LwB" secondAttribute="leadingMargin" constant="20" id="5sG-4i-sKk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vja-LP-ubP" secondAttribute="trailing" constant="20" id="8MD-t4-jIs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ewM-XQ-o3v" secondAttribute="trailing" constant="20" id="HFU-ho-00t"/>
+                            <constraint firstItem="bNu-gn-OVd" firstAttribute="top" secondItem="tAE-i5-D3P" secondAttribute="bottom" constant="20" id="Lfb-2l-WN1"/>
+                            <constraint firstAttribute="centerX" secondItem="tAE-i5-D3P" secondAttribute="centerX" priority="400" id="Q60-mb-6pB"/>
+                            <constraint firstItem="vja-LP-ubP" firstAttribute="leading" secondItem="RXe-Sb-LwB" secondAttribute="leadingMargin" constant="20" id="RSq-hv-p5T"/>
+                            <constraint firstItem="bNu-gn-OVd" firstAttribute="top" secondItem="uGy-JP-LSy" secondAttribute="bottom" constant="20" id="a23-hy-2c4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uGy-JP-LSy" secondAttribute="trailing" constant="20" id="ph2-fx-BKh"/>
+                            <constraint firstItem="ewM-XQ-o3v" firstAttribute="top" secondItem="Z92-q5-1Q7" secondAttribute="bottom" constant="24" id="xOQ-YJ-9o7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3G-pd-Fja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
