@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         let url = NSURL(string: "http://aliyounis.us")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+            
             // pass our NS Data return to a string
             var stringData = NSString(data: data, encoding: NSUTF8StringEncoding)
             
