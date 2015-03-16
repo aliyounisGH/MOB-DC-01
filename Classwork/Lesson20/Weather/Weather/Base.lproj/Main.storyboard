@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading data .." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8u-jw-SEK">
+                                <rect key="frame" x="242" y="142" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yow-9J-7BQ">
+                                <rect key="frame" x="199" y="28" width="203" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69f-Ri-ddd">
+                                <rect key="frame" x="259" y="318" width="82" height="30"/>
+                                <state key="normal" title="Update City">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKw-9m-9P4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDY-EA-CqW">
+                                <rect key="frame" x="199" y="77" width="203" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="69f-Ri-ddd" secondAttribute="centerY" constant="-33" id="9np-6a-fgz"/>
+                            <constraint firstAttribute="centerX" secondItem="69f-Ri-ddd" secondAttribute="centerX" id="ZsE-5A-VnF"/>
+                            <constraint firstAttribute="centerY" secondItem="X8u-jw-SEK" secondAttribute="centerY" constant="147.5" id="aLP-05-jnS"/>
+                            <constraint firstAttribute="centerX" secondItem="X8u-jw-SEK" secondAttribute="centerX" id="df8-s8-Gzz"/>
+                            <constraint firstAttribute="centerY" secondItem="QDY-EA-CqW" secondAttribute="centerY" constant="208" id="f0A-0b-At9"/>
+                            <constraint firstAttribute="centerX" secondItem="yow-9J-7BQ" secondAttribute="centerX" constant="-0.5" id="kGp-1N-4PY"/>
+                            <constraint firstAttribute="centerX" secondItem="QDY-EA-CqW" secondAttribute="centerX" constant="-0.5" id="tAM-FZ-Hyl"/>
+                            <constraint firstAttribute="centerY" secondItem="yow-9J-7BQ" secondAttribute="centerY" constant="257" id="z8K-3o-3gw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityEntry" destination="yow-9J-7BQ" id="EUE-z5-uPH"/>
+                        <outlet property="stateEntry" destination="QDY-EA-CqW" id="dSE-OV-4x0"/>
+                        <outlet property="weatherDescription" destination="X8u-jw-SEK" id="jAJ-UE-Nw9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="378"/>
+        </scene>
+    </scenes>
+</document>
