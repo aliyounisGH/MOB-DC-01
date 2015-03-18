@@ -36,8 +36,9 @@ class ViewController: UIViewController {
         */
         
         // Let's start by giving our view's layer a nice color using backgroundColor, just like you would on a normal UIView
-        self.view.layer.backgroundColor = UIColor(white: 0.9, alpha: 1.0).CGColor
+        //self.view.layer.backgroundColor = UIColor(white: 0.9, alpha: 1.0).CGColor
         
+        self.view.layer.backgroundColor = UIColor(red: 0.34, green: 0.15, blue: 0.153, alpha: 1).CGColor
         
         /*
         
