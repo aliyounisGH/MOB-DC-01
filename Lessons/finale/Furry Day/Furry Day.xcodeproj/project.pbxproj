@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		940BB3031ABFB11D00CDF0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940BB3021ABFB11D00CDF0CE /* AppDelegate.swift */; };
+		940BB3051ABFB11D00CDF0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940BB3041ABFB11D00CDF0CE /* ViewController.swift */; };
+		940BB3081ABFB11D00CDF0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940BB3061ABFB11D00CDF0CE /* Main.storyboard */; };
+		940BB30A1ABFB11D00CDF0CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940BB3091ABFB11D00CDF0CE /* Images.xcassets */; };
+		940BB30D1ABFB11D00CDF0CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940BB30B1ABFB11D00CDF0CE /* LaunchScreen.xib */; };
+		940BB3191ABFB11D00CDF0CE /* Furry_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940BB3181ABFB11D00CDF0CE /* Furry_DayTests.swift */; };
+		940BB3231AC06EBF00CDF0CE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3221AC06EBF00CDF0CE /* FacebookSDK.framework */; };
+		940BB32A1AC0715200CDF0CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3271AC0715200CDF0CE /* Bolts.framework */; };
+		940BB32B1AC0715200CDF0CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3281AC0715200CDF0CE /* Parse.framework */; };
+		940BB32C1AC0715200CDF0CE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3291AC0715200CDF0CE /* ParseFacebookUtils.framework */; };
+		940BB32E1AC071DB00CDF0CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB32D1AC071DB00CDF0CE /* AudioToolbox.framework */; };
+		940BB3301AC071E500CDF0CE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB32F1AC071E500CDF0CE /* CFNetwork.framework */; };
+		940BB3321AC071EF00CDF0CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3311AC071EF00CDF0CE /* CoreGraphics.framework */; };
+		940BB3341AC071FA00CDF0CE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3331AC071FA00CDF0CE /* CoreLocation.framework */; };
+		940BB3361AC0720A00CDF0CE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3351AC0720A00CDF0CE /* MobileCoreServices.framework */; };
+		940BB3381AC0721B00CDF0CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3371AC0721B00CDF0CE /* QuartzCore.framework */; };
+		940BB33A1AC0722900CDF0CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3391AC0722900CDF0CE /* Security.framework */; };
+		940BB33C1AC0723200CDF0CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB33B1AC0723200CDF0CE /* StoreKit.framework */; };
+		940BB33E1AC0723D00CDF0CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB33D1AC0723D00CDF0CE /* SystemConfiguration.framework */; };
+		940BB3401AC0724D00CDF0CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB33F1AC0724D00CDF0CE /* libz.dylib */; };
+		940BB3421AC0725A00CDF0CE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 940BB3411AC0725A00CDF0CE /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		940BB3131ABFB11D00CDF0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 940BB2F51ABFB11D00CDF0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 940BB2FC1ABFB11D00CDF0CE;
+			remoteInfo = "Furry Day";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		940BB2FD1ABFB11D00CDF0CE /* Furry Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furry Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		940BB3011ABFB11D00CDF0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940BB3021ABFB11D00CDF0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		940BB3041ABFB11D00CDF0CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		940BB3071ABFB11D00CDF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		940BB3091ABFB11D00CDF0CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		940BB30C1ABFB11D00CDF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		940BB3121ABFB11D00CDF0CE /* Furry DayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Furry DayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		940BB3171ABFB11D00CDF0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940BB3181ABFB11D00CDF0CE /* Furry_DayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furry_DayTests.swift; sourceTree = "<group>"; };
+		940BB3221AC06EBF00CDF0CE /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		940BB3241AC0705600CDF0CE /* Furry Day-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Furry Day-Bridging-Header.h"; sourceTree = "<group>"; };
+		940BB3271AC0715200CDF0CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		940BB3281AC0715200CDF0CE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		940BB3291AC0715200CDF0CE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		940BB32D1AC071DB00CDF0CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		940BB32F1AC071E500CDF0CE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		940BB3311AC071EF00CDF0CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		940BB3331AC071FA00CDF0CE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		940BB3351AC0720A00CDF0CE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		940BB3371AC0721B00CDF0CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		940BB3391AC0722900CDF0CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		940BB33B1AC0723200CDF0CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		940BB33D1AC0723D00CDF0CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		940BB33F1AC0724D00CDF0CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		940BB3411AC0725A00CDF0CE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		940BB2FA1ABFB11D00CDF0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940BB3421AC0725A00CDF0CE /* libsqlite3.dylib in Frameworks */,
+				940BB3401AC0724D00CDF0CE /* libz.dylib in Frameworks */,
+				940BB33E1AC0723D00CDF0CE /* SystemConfiguration.framework in Frameworks */,
+				940BB33C1AC0723200CDF0CE /* StoreKit.framework in Frameworks */,
+				940BB33A1AC0722900CDF0CE /* Security.framework in Frameworks */,
+				940BB3381AC0721B00CDF0CE /* QuartzCore.framework in Frameworks */,
+				940BB3361AC0720A00CDF0CE /* MobileCoreServices.framework in Frameworks */,
+				940BB3341AC071FA00CDF0CE /* CoreLocation.framework in Frameworks */,
+				940BB3321AC071EF00CDF0CE /* CoreGraphics.framework in Frameworks */,
+				940BB3301AC071E500CDF0CE /* CFNetwork.framework in Frameworks */,
+				940BB32E1AC071DB00CDF0CE /* AudioToolbox.framework in Frameworks */,
+				940BB3231AC06EBF00CDF0CE /* FacebookSDK.framework in Frameworks */,
+				940BB32B1AC0715200CDF0CE /* Parse.framework in Frameworks */,
+				940BB32C1AC0715200CDF0CE /* ParseFacebookUtils.framework in Frameworks */,
+				940BB32A1AC0715200CDF0CE /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		940BB30F1ABFB11D00CDF0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		940BB2F41ABFB11D00CDF0CE = {
+			isa = PBXGroup;
+			children = (
+				940BB3411AC0725A00CDF0CE /* libsqlite3.dylib */,
+				940BB33F1AC0724D00CDF0CE /* libz.dylib */,
+				940BB33D1AC0723D00CDF0CE /* SystemConfiguration.framework */,
+				940BB33B1AC0723200CDF0CE /* StoreKit.framework */,
+				940BB3391AC0722900CDF0CE /* Security.framework */,
+				940BB3371AC0721B00CDF0CE /* QuartzCore.framework */,
+				940BB3351AC0720A00CDF0CE /* MobileCoreServices.framework */,
+				940BB3331AC071FA00CDF0CE /* CoreLocation.framework */,
+				940BB3311AC071EF00CDF0CE /* CoreGraphics.framework */,
+				940BB32F1AC071E500CDF0CE /* CFNetwork.framework */,
+				940BB32D1AC071DB00CDF0CE /* AudioToolbox.framework */,
+				940BB2FF1ABFB11D00CDF0CE /* Furry Day */,
+				940BB3151ABFB11D00CDF0CE /* Furry DayTests */,
+				940BB2FE1ABFB11D00CDF0CE /* Products */,
+				940BB3241AC0705600CDF0CE /* Furry Day-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		940BB2FE1ABFB11D00CDF0CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				940BB2FD1ABFB11D00CDF0CE /* Furry Day.app */,
+				940BB3121ABFB11D00CDF0CE /* Furry DayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		940BB2FF1ABFB11D00CDF0CE /* Furry Day */ = {
+			isa = PBXGroup;
+			children = (
+				940BB3021ABFB11D00CDF0CE /* AppDelegate.swift */,
+				940BB3041ABFB11D00CDF0CE /* ViewController.swift */,
+				940BB3271AC0715200CDF0CE /* Bolts.framework */,
+				940BB3281AC0715200CDF0CE /* Parse.framework */,
+				940BB3291AC0715200CDF0CE /* ParseFacebookUtils.framework */,
+				940BB3221AC06EBF00CDF0CE /* FacebookSDK.framework */,
+				940BB3061ABFB11D00CDF0CE /* Main.storyboard */,
+				940BB3091ABFB11D00CDF0CE /* Images.xcassets */,
+				940BB30B1ABFB11D00CDF0CE /* LaunchScreen.xib */,
+				940BB3001ABFB11D00CDF0CE /* Supporting Files */,
+			);
+			path = "Furry Day";
+			sourceTree = "<group>";
+		};
+		940BB3001ABFB11D00CDF0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				940BB3011ABFB11D00CDF0CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		940BB3151ABFB11D00CDF0CE /* Furry DayTests */ = {
+			isa = PBXGroup;
+			children = (
+				940BB3181ABFB11D00CDF0CE /* Furry_DayTests.swift */,
+				940BB3161ABFB11D00CDF0CE /* Supporting Files */,
+			);
+			path = "Furry DayTests";
+			sourceTree = "<group>";
+		};
+		940BB3161ABFB11D00CDF0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				940BB3171ABFB11D00CDF0CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		940BB2FC1ABFB11D00CDF0CE /* Furry Day */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 940BB31C1ABFB11D00CDF0CE /* Build configuration list for PBXNativeTarget "Furry Day" */;
+			buildPhases = (
+				940BB2F91ABFB11D00CDF0CE /* Sources */,
+				940BB2FA1ABFB11D00CDF0CE /* Frameworks */,
+				940BB2FB1ABFB11D00CDF0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Furry Day";
+			productName = "Furry Day";
+			productReference = 940BB2FD1ABFB11D00CDF0CE /* Furry Day.app */;
+			productType = "com.apple.product-type.application";
+		};
+		940BB3111ABFB11D00CDF0CE /* Furry DayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 940BB31F1ABFB11D00CDF0CE /* Build configuration list for PBXNativeTarget "Furry DayTests" */;
+			buildPhases = (
+				940BB30E1ABFB11D00CDF0CE /* Sources */,
+				940BB30F1ABFB11D00CDF0CE /* Frameworks */,
+				940BB3101ABFB11D00CDF0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				940BB3141ABFB11D00CDF0CE /* PBXTargetDependency */,
+			);
+			name = "Furry DayTests";
+			productName = "Furry DayTests";
+			productReference = 940BB3121ABFB11D00CDF0CE /* Furry DayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		940BB2F51ABFB11D00CDF0CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Ali Younis";
+				TargetAttributes = {
+					940BB2FC1ABFB11D00CDF0CE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					940BB3111ABFB11D00CDF0CE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 940BB2FC1ABFB11D00CDF0CE;
+					};
+				};
+			};
+			buildConfigurationList = 940BB2F81ABFB11D00CDF0CE /* Build configuration list for PBXProject "Furry Day" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 940BB2F41ABFB11D00CDF0CE;
+			productRefGroup = 940BB2FE1ABFB11D00CDF0CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				940BB2FC1ABFB11D00CDF0CE /* Furry Day */,
+				940BB3111ABFB11D00CDF0CE /* Furry DayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		940BB2FB1ABFB11D00CDF0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940BB3081ABFB11D00CDF0CE /* Main.storyboard in Resources */,
+				940BB30D1ABFB11D00CDF0CE /* LaunchScreen.xib in Resources */,
+				940BB30A1ABFB11D00CDF0CE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		940BB3101ABFB11D00CDF0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		940BB2F91ABFB11D00CDF0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940BB3051ABFB11D00CDF0CE /* ViewController.swift in Sources */,
+				940BB3031ABFB11D00CDF0CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		940BB30E1ABFB11D00CDF0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940BB3191ABFB11D00CDF0CE /* Furry_DayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		940BB3141ABFB11D00CDF0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 940BB2FC1ABFB11D00CDF0CE /* Furry Day */;
+			targetProxy = 940BB3131ABFB11D00CDF0CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		940BB3061ABFB11D00CDF0CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				940BB3071ABFB11D00CDF0CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		940BB30B1ABFB11D00CDF0CE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				940BB30C1ABFB11D00CDF0CE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		940BB31A1ABFB11D00CDF0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		940BB31B1ABFB11D00CDF0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		940BB31D1ABFB11D00CDF0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Furry",
+					Day,
+				);
+				INFOPLIST_FILE = "Furry Day/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Furry Day-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		940BB31E1ABFB11D00CDF0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Furry",
+					Day,
+				);
+				INFOPLIST_FILE = "Furry Day/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Furry Day-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		940BB3201ABFB11D00CDF0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Furry DayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furry Day.app/Furry Day";
+			};
+			name = Debug;
+		};
+		940BB3211ABFB11D00CDF0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Furry DayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furry Day.app/Furry Day";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		940BB2F81ABFB11D00CDF0CE /* Build configuration list for PBXProject "Furry Day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940BB31A1ABFB11D00CDF0CE /* Debug */,
+				940BB31B1ABFB11D00CDF0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		940BB31C1ABFB11D00CDF0CE /* Build configuration list for PBXNativeTarget "Furry Day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940BB31D1ABFB11D00CDF0CE /* Debug */,
+				940BB31E1ABFB11D00CDF0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		940BB31F1ABFB11D00CDF0CE /* Build configuration list for PBXNativeTarget "Furry DayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940BB3201ABFB11D00CDF0CE /* Debug */,
+				940BB3211ABFB11D00CDF0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 940BB2F51ABFB11D00CDF0CE /* Project object */;
+}
